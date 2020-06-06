@@ -1,9 +1,0 @@
-- alias: "Plex is ready"
-  trigger:
-    platform: state
-    entity_id: sensor.living_room_tv_source
-    to: 'Plex'
-  action:
-    - service: shell_command.ac_on
-      data:
-        url: 'http://192.168.1.192/SystemON'

@@ -13,3 +13,8 @@ scene: !include scenes.yaml
 sensor: !include_dir_list includes/sensors/
 webostv: !include includes/webostv/webostv.yaml
 spotify: !include includes/spotify/spotify.yaml
+
+rest_command:
+  plex_ready_request:
+    url: http://192.168.1.44:8080/plexReady
+    method: GET
