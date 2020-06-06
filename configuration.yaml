@@ -7,8 +7,9 @@ tts:
   - platform: google_translate
 
 group: !include groups.yaml
-automation: !include automations.yaml
+automation: !include_dir_list includes/automations/
 script: !include scripts.yaml
 scene: !include scenes.yaml
+sensor: !include_dir_list includes/sensors/
 webostv: !include includes/webostv/webostv.yaml
 spotify: !include includes/spotify/spotify.yaml
